@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test ",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pondchance/test.git"
+  },
+  "author": "suwpahat\u001b[D\u001b[D\u001b[\u001b[Du\u001b[C\u001b[C\u001b[Caphat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pondchance/test/issues"
+  },
+  "homepage": "https://github.com/pondchance/test#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "http-server": "^0.10.0"
+  }
+}
