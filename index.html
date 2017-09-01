@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intro to ES6</title>
+	<meta charset="utf-8">
+	
+
+<style type="text/css">
+    body {
+
+     background: -webkit-linear-gradient(left top,  #CCCC66, yellow); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(bottom right,  #CCCC66, yellow); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(bottom right,  #CCCC66, yellow); /* For Firefox 3.6 to 15 */
+   	  background: linear-gradient(to bottom right, #CCCC66, yellow);/*For Chorme*/
+   	  font-family: helvetica;
+    	} 
+    	button:hover {
+       background: #BEBEBE;
+   	  text-shadow: -1px 0px #e42c8b, -2px -1px #e42c8b, 1px 0px #a9e42c, 2px 1px #a9e42c; color: #000;
+   }
+
+   .border-kb{
+    border: 15px solid 	#E6E6FA;
+    padding: 20px;
+    margin: 17px;
+    background-color: #F5F5F5; 
+    border-radius: 25px
+   
+   }
+  
+   #area {
+    width: 500px;
+    height: 100px;
+    border: 3px #B0E0E6;
+    border-style: inset;
+    padding: 5px;
+    font-size: 18px;
+
+    }
+
+    button{
+
+        border-style: 20px;
+        border-color: #E6E6FA;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 5px;
+        width : 50px;
+	    height : 50px;
+
+    }
+  
+</style>
+<script src='build/main.bundle.js'></script>
+</head>
+<body> <center>
+    <div class="border-kb">
+       <textarea id="area" readonly></textarea>
+
+ 
+     <h1 style="font-size: 30px;color: #8FBC8F;font-family:helvetica">MY KEYBOARD !</h1>
+     
+
+      
+   </br>
+        <button type ="btn" onclick="clickchar('~');">~</button>
+		<button type ="btn" onclick="clickchar('1');">1</button>
+		<button type ="btn" onclick="clickchar('2');">2</button>
+		<button type ="btn" onclick="clickchar('3');">3</button>
+		<button type ="btn" onclick="clickchar('4');">4</button>
+		<button type ="btn" onclick="clickchar('5');">5</button>
+		<button type ="btn" onclick="clickchar('6');">6</button>
+		<button type ="btn" onclick="clickchar('7');">7</button>
+		<button type ="btn" onclick="clickchar('8');">8</button>
+		<button type ="btn" onclick="clickchar('9');">9</button>
+		<button type ="btn" onclick="clickchar('0');">0</button>
+		<button type ="btn" onclick="clickchar('-');">-</button>
+		<button type ="btn" onclick="clickchar('=');">=</button>
+		<button type="btn" onclick="clickBS();" style="width:138px;">BACKSPACE</button>
+		<br><br>
+		    <button type="btn" onclick="clicktadabtabtab();" style="width:115px;">Tap</button>
+		    
+	        <button type="btn" onclick="clickchar('Q');">Q</button>
+			<button type="btn" onclick="clickchar('W');">W</button>
+			<button type="btn" onclick="clickchar('E');">E</button>
+			<button type="btn" onclick="clickchar('R');">R</button>
+			<button type="btn" onclick="clickchar('T');">T</button>
+			<button type="btn" onclick="clickchar('Y');">Y</button>
+			<button type="btn" onclick="clickchar('U');">U</button>
+			<button type="btn" onclick="clickchar('I');">I</button>
+			<button type="btn" onclick="clickchar('O');">O</button>
+			<button type="btn" onclick="clickchar('P');">P</button>
+			<button type="btn" onclick="clickchar('[');">[</button>
+			<button type="btn" onclick="clickchar(']');">]</button>
+			<button type="btn" onclick="clickchar('\\');">\</button>
+		<br><br>	
+	    <button type="btn" onclick="clickchar('A');">A</button>
+	    <button type="btn" onclick="clickchar('S');">S</button>
+	    <button type="btn" onclick="clickchar('D');">D</button>
+	    <button type="btn" onclick="clickchar('F');">F</button>
+	    <button type="btn" onclick="clickchar('G');">G</button>
+	    <button type="btn" onclick="clickchar('H');">H</button>
+	    <button type="btn" onclick="clickchar('J');">J</button>
+	    <button type="btn" onclick="clickchar('K');">K</button>
+	    <button type="btn" onclick="clickchar('L');">L</button>
+	    <button type="btn" onclick="clickchar(';');">;</button>
+	    <button type="btn" onclick="clickchar('\'');">'</button>
+	    <button type="btn" onclick="clickenter();" style="width:84px;">ENTER</button>
+	    <br><br>
+	        <button type="btn" onclick="clickchar('Z');">Z</button>
+	        <button type="btn" onclick="clickchar('X');">X</button>
+	        <button type="btn" onclick="clickchar('C');">C</button>
+	        <button type="btn" onclick="clickchar('V');">V</button>
+	        
+	        <button type="btn" onclick="clickchar('B');">B</button>
+	        <button type="btn" onclick="clickchar('N');">N</button>
+	        <button type="btn" onclick="clickchar('M');">M</button>
+            <button type="btn" onclick="clickchar(',');">,</button>
+            <button type="btn" onclick="clickchar('.');">.</button>
+            <button type="btn" onclick="clickchar('/');">/</button>
+            <button type="btn" onclick="clickclear();" style="width:150px;">CLEAR</button>
+            <br><br>
+            <button type="btn" onclick="clickSP();" style="width:450px;" >SPACEBAR</button>
+              </center>
+	        </div>
+       
+    </body>
+</html>
